@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Agenda contactos</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<!-- Navbar -->
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+		      <a href="#" class="brand-logo">Agenda de Contactos</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li>
+		        	<a class="waves-effect waves-light btn modal-trigger" href="#modal-add"><i class="material-icons left">add</i>Agregar</a>
+		        </li>
+		        <li>
+		        	<a class="waves-effect waves-light btn"><i class="material-icons left">search</i>Buscar</a>
+		        </li>
+		        <li>Jquery</li>
+		      </ul>
+		    </div>
+		 </nav
+	</header>
+	<!-- MODAL AGREGAR -->
+	  <div id="modal-add" class="modal container">
+	    <div class="modal-content">
+	      <h4>Crear contacto</h4>
+	      <div class="row">
+		    <form class="col s12">
+		      <div class="row">
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">account_circle</i>
+		          <input id="contact-name" type="text" class="validate">
+		          <label for="contact-name">First Name</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">phone</i>
+		          <input id="contact-phone" type="tel" class="validate">
+		          <label for="contact-phone">Telephone</label>
+		        </div>
+		      </div>
+		    </form>
+		  </div>
+	    </div>
+	    <div class="modal-footer">
+	      <a id="add-contact" href="#!" class="modal-close waves-effect waves-green left btn">Listo</a>
+	    </div>
+	  </div>
+	  <!-- SECCIÓN CONTACTOS-->
+	  <main>
+	  	<h5 class="center"> Total contactos: 0 </h5>
+	  	<!-- Plantilla tarjeta contacto -->
+	   <!--  <div class="row">
+		    <div class="col offset-s3 s6">
+		      <div class="card-panel  orange lighten-4">
+		        <h3> Nombre Completo</h3>
+		        <span> 33 55 34 78 </span>
+		        <a class="waves-effect waves-light btn right" href=""><i class="material-icons left">delete</i></a>
+		      </div>
+		    </div>
+		 </div> -->
+		 <!-- Fin Plantilla -->
+	  </main>
+	<!-- SCRIPTS -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script src="app.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
